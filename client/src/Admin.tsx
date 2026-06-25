@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Download, Users, Trophy, Loader2 } from 'lucide-react';
+import { useState } from 'react';
+import { Download, Users, Trophy } from 'lucide-react';
 
 const API_URL = import.meta.env.VITE_API_URL || 'https://idena-raffle-draw.onrender.com/api';
 
@@ -183,7 +183,7 @@ export default function Admin() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-line text-sm">
-                {participants.map(p => (
+                {participants.map((p) => (
                   <tr key={p.id} className="hover:bg-white/50">
                     <td className="p-4">{p.name}</td>
                     <td className="p-4">{p.email}</td>
