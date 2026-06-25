@@ -152,7 +152,7 @@ export default function Admin() {
                 🏆 Latest Winners
               </h3>
               <ul className="space-y-2">
-                {winners.map((w, i) => (
+                {winners.map((w) => (
                   <li key={w.id} className="bg-white px-3 py-2 rounded border border-yellow-100 flex justify-between items-center shadow-sm">
                     <span className="font-medium text-ink">{w.name}</span>
                     <span className="font-serif text-magenta">{w.number}</span>
