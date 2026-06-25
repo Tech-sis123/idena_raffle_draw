@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-pink-150 text-ink font-body overflow-x-hidden;
+    background-image:
+      radial-gradient(ellipse at 15% 8%, rgba(249,231,247,.5) 0%, transparent 50%),
+      radial-gradient(ellipse at 85% 25%, rgba(246,217,238,.35) 0%, transparent 45%),
+      radial-gradient(ellipse at 50% 60%, rgba(240,168,216,.1) 0%, transparent 55%),
+      radial-gradient(ellipse at 20% 90%, rgba(249,231,247,.4) 0%, transparent 40%);
+    background-attachment: fixed;
+  }
+}
