@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { PartyPopper, ArrowRight, Loader2 } from 'lucide-react';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://idena-raffle-draw.onrender.com/api';
 
 export default function Landing() {
   const [name, setName] = useState('');
