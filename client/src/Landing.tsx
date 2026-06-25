@@ -66,8 +66,8 @@ export default function Landing() {
             </div>
             
             {!isExisting && (
-              <p className="text-sm text-ink/60">
-                We've also sent this to your email. Keep it safe!
+              <p className="text-ink/80 text-sm mt-4">
+                You will only see this number again if you use the same email address. Please keep it safe!
               </p>
             )}
 
